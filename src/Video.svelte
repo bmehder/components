@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  export let file = "http://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
+  export let file = "https://clips.vorwaerts-gmbh.de/big_buck_bunny.mp4";
   export let loop;
   export let poster;
   onMount(() => {
