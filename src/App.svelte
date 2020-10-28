@@ -9,8 +9,9 @@
   import Gooey from "./Gooey.svelte";
   import Hoverton from "./Hoverton.svelte";
   import Cards from "./Cards.svelte";
+  import Gallery from "./Gallery.svelte";
   import Smoke from "./Smoke.svelte";
-  import Footer from "./Footer.svelte";
+  // import Footer from "./Footer.svelte";
 
   // Router
   const pages = [
@@ -22,6 +23,7 @@
     "gooey",
     "cards",
     "hoverton",
+    "gallery",
     "smoke"
   ];
   let currentPage = pages[0];
@@ -111,6 +113,11 @@
 
 {#if currentPage === 'hoverton'}
   <Hoverton />
+{/if}
+
+{#if currentPage === 'gallery'}
+  ncjsanckj
+  <Gallery />
 {/if}
 
 {#if currentPage === 'smoke'}
