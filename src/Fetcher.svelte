@@ -73,7 +73,7 @@
   {:then data}
 
     <!-- <h3>Async Data Fetcher</h3> -->
-    <article class="heading">
+    <article class="heading shadow">
       <div>
         <strong>Business</strong>
       </div>

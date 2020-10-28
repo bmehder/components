@@ -57,13 +57,19 @@
 
 <div class="caption-container">
   <!-- Previous Arrow -->
-  <a href="#arrowL" class="arrow prev" on:click={() => dispatch('prevClick')}>
+  <a
+    href="#arrowL"
+    class="arrow prev"
+    on:click|preventDefault={() => dispatch('prevClick')}>
     &#10094;
   </a>
   <!-- Caption -->
   <p id="caption">{caption}</p>
   <!-- Next Arrow -->
-  <a href="#arrowR" class="arrow next" on:click={() => dispatch('nextClick')}>
+  <a
+    href="#arrowR"
+    class="arrow next"
+    on:click|preventDefault={() => dispatch('nextClick')}>
     &#10095;
   </a>
 

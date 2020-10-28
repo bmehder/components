@@ -8,6 +8,7 @@
   import Neumorphism from "./Neumorphism.svelte";
   import Gooey from "./Gooey.svelte";
   import Hoverton from "./Hoverton.svelte";
+  import Isometric from "./Isometric.svelte";
   import Cards from "./Cards.svelte";
   import Gallery from "./gallery/Gallery.svelte";
   import Smoke from "./Smoke.svelte";
@@ -21,6 +22,7 @@
     "neumorphism",
     "flex",
     "gooey",
+    "isometric",
     "cards",
     "hoverton",
     "gallery",
@@ -105,6 +107,10 @@
   <section style="background:black;padding:0;">
     <Gooey />
   </section>
+{/if}
+
+{#if currentPage === 'isometric'}
+  <Isometric />
 {/if}
 
 {#if currentPage === 'cards'}
