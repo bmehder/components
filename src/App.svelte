@@ -36,7 +36,7 @@
     flex-direction: column;
     align-items: center;
     height: 100%;
-    width: 120px; /* 0 width - change this with JavaScript */
+    width: 150px; /* 0 width - change this with JavaScript */
     position: absolute;
     z-index: 1;
     top: 120px;
@@ -44,7 +44,7 @@
     background: #333;
     background-size: 50px 50px;
     overflow-x: hidden;
-    padding-top: 60px;
+    padding: 60px 0;
     transition: 0.4s;
   }
   nav a {
@@ -57,6 +57,11 @@
   .active {
     color: darkorange;
     font-weight: bold;
+  }
+  @media (max-width: 400px) {
+    nav {
+      width: 0px;
+    }
   }
 </style>
 

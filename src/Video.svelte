@@ -94,13 +94,13 @@
     padding: 0 5px;
     cursor: pointer;
   }
-  .controls .fa-play {
+  :global(.controls .fa-play) {
     color: #28a745;
   }
   .controls .fa-stop {
     color: #dc3545;
   }
-  .controls .fa-pause {
+  :global(.controls .fa-pause) {
     color: #fff;
   }
   .controls .timestamp {

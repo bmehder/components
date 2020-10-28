@@ -78,14 +78,7 @@ button:focus {
 section {
   width: 100%;
   min-height: 100vh;
-  padding: 0 100px 100px 200px;
-}
-
-.controls .fa-pause {
-  color: #fff;
-}
-.controls .fa-play {
-  color: #28a745;
+  padding: 0 100px 100px 250px;
 }
 
 .carbon {
