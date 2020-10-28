@@ -1,5 +1,5 @@
 <script>
-  export let text = "Smoke";
+  export let text = "SMOKE";
 </script>
 
 <style>
@@ -8,7 +8,6 @@
     font-family: "Poppins", sans-serif;
     position: relative;
     width: 100%;
-    height: 100vh;
     background: #000;
     display: flex;
     justify-content: center;

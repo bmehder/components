@@ -2,8 +2,6 @@
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
   * {
-    margin: 0;
-    padding: 0;
     font-family: "Poppins", sans-serif;
   }
 
@@ -16,8 +14,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 120vh;
-    max-height: 120vh;
+    height: 150vh;
     background: darkorange;
   }
 

@@ -1,13 +1,12 @@
 <style>
   h3 {
-    color: white;
+    color: darkorange;
   }
   section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background: #000;
   }
   .loader {

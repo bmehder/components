@@ -4,7 +4,7 @@
   import Video from "./Video.svelte";
   import Fetcher from "./Fetcher.svelte";
   import Flex from "./Flex.svelte";
-  // import Eyes from "./Eyes.svelte";
+  import Iphone from "./Iphone.svelte";
   import Gooey from "./Gooey.svelte";
   import Hoverton from "./Hoverton.svelte";
   import Cards from "./Cards.svelte";
@@ -17,10 +17,11 @@
 <Audio />
 <Video />
 <Fetcher />
+<Iphone />
 <Flex />
-<!-- <Eyes /> -->
 <Gooey />
 <Cards />
 <Hoverton />
 <Smoke />
+
 <Footer />
