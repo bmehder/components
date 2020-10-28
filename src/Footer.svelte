@@ -12,7 +12,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #333;
+    background-color: #222;
     color: white;
   }
   p {
