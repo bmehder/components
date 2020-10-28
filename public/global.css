@@ -78,7 +78,7 @@ button:focus {
 section {
   width: 100%;
   height: 100vh;
-  padding: 0 100px 100px 250px;
+  padding: 100px 100px 100px 250px;
 }
 
 .carbon {
