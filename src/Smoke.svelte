@@ -1,4 +1,5 @@
 <script>
+  import { fly } from "svelte/transition";
   export let text = "SMOKE";
 </script>
 
@@ -25,14 +26,15 @@
   section video {
     position: absolute;
     top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
 </style>
 
-<section>
+<section
+  in:fly={{ delay: 250, duration: 300, x: 1000, y: 0, opacity: 0.5 }}
+  out:fly={{ delay: 250, duration: 300, x: -1000, y: 0, opacity: 0.5 }}>
   <h2>{text}</h2>
   <video src="/assets/smoke.mp4" muted loop autoplay type="mp4" />
 </section>

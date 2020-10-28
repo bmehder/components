@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { fly } from "svelte/transition";
   export let file =
     "https://player.vimeo.com/external/305211631.sd.mp4?s=3d46306a3d07d1c56eb64f1fcb1ba96232e34d90&profile_id=164&oauth2_token_id=57447761";
   export let loop;
@@ -122,8 +123,10 @@
   }
 </style>
 
-<section>
-  <h3>Video Player</h3>
+<section
+  in:fly={{ duration: 300, x: 1000, y: 0, opacity: 0.5 }}
+  out:fly={{ duration: 300, x: -1000, y: 0, opacity: 0.5 }}>
+  <!-- <h3>Video Player</h3> -->
   <!-- svelte-ignore a11y-media-has-caption -->
   <video src={file} id="video" class="screen shadow" {poster} {loop} />
 

@@ -1,4 +1,5 @@
 <script>
+  import { fly } from "svelte/transition";
   export let image = "bg.jpg";
   export let source =
     "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3";
@@ -42,8 +43,11 @@
   }
 </style>
 
-<section id="audio">
-  <h3>Audio Player</h3>
+<section
+  id="audio"
+  in:fly={{ delay: 250, duration: 300, x: 1000, y: 0, opacity: 0.5 }}
+  out:fly={{ delay: 250, duration: 300, x: -1000, y: 0, opacity: 0.5 }}>
+  <!-- <h3>Audio Player</h3> -->
   <article>
     <figure>
       <img src="assets/{image}" alt="Background" />

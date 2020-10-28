@@ -1,4 +1,6 @@
 <script>
+  import { fly } from "svelte/transition";
+  import Gooey from "./Gooey.svelte";
   export let endpoint =
     "https://raw.githubusercontent.com/bmehder/projects/master/json/covid.json";
   async function getData() {
@@ -18,9 +20,9 @@
   section {
     overflow-x: auto;
   }
-  h3 {
+  /* h3 {
     color: white;
-  }
+  } */
   article {
     display: flex;
     min-width: 600px;
@@ -39,6 +41,7 @@
   .heading {
     background-color: darkorange !important;
     color: #fff;
+    margin-top: 50px;
   }
   p {
     display: flex;
@@ -56,14 +59,19 @@
   }
 </style>
 
-<section id="fetcher" class="carbon">
+<section
+  id="fetcher"
+  class="carbon"
+  in:fly={{ delay: 250, duration: 300, x: 1000, y: 0, opacity: 0.5 }}
+  out:fly={{ delay: 250, duration: 300, x: -1000, y: 0, opacity: 0.5 }}>
+
   {#await promise}
 
-    <p>...loading</p>
+    <Gooey />
 
   {:then data}
 
-    <h3>Async Data Fetcher</h3>
+    <!-- <h3>Async Data Fetcher</h3> -->
     <article class="heading">
       <div>
         <strong>Business</strong>

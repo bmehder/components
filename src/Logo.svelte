@@ -10,6 +10,6 @@
   }
 </style>
 
-<a href="#home">
+<a href=".">
   <img src={image} alt="Logo" />
 </a>

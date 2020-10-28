@@ -1,3 +1,7 @@
+<script>
+  import { fly } from "svelte/transition";
+</script>
+
 <style>
   h3 {
     color: darkorange;
@@ -7,7 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: #000;
+    /* background: #000; */
   }
   .loader {
     position: relative;
@@ -50,8 +54,10 @@
   }
 </style>
 
-<section>
-  <h3>Gooey SVG Spinner</h3>
+<section
+  in:fly={{ delay: 250, duration: 300, x: 1000, y: 0, opacity: 0.5 }}
+  out:fly={{ delay: 250, duration: 300, x: -1000, y: 0, opacity: 0.5 }}>
+  <!-- <h3>Gooey SVG Spinner</h3> -->
   <svg>
     <filter id="gooey">
       <feGaussianBlur in="SourceGraphic" stdDeviation="10" />

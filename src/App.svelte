@@ -4,24 +4,110 @@
   import Video from "./Video.svelte";
   import Fetcher from "./Fetcher.svelte";
   import Flex from "./Flex.svelte";
-  import Iphone from "./Iphone.svelte";
+  import Neumorphism from "./Neumorphism.svelte";
   import Gooey from "./Gooey.svelte";
   import Hoverton from "./Hoverton.svelte";
   import Cards from "./Cards.svelte";
   import Smoke from "./Smoke.svelte";
   import Footer from "./Footer.svelte";
+
+  // Router
+  const pages = [
+    "audio",
+    "video",
+    "fetcher",
+    "neumorphism",
+    "flex",
+    "gooey",
+    "cards",
+    "hoverton",
+    "smoke"
+  ];
+  let currentPage = pages[0];
+  const switchPage = i => {
+    currentPage = pages[i];
+    console.log(currentPage);
+  };
 </script>
 
-<Header />
+<style>
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 120px; /* 0 width - change this with JavaScript */
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 0;
+    background: #333;
+    background-size: 50px 50px;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.4s;
+  }
+  nav a {
+    padding: 1em 0;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  a:hover,
+  .active {
+    color: darkorange;
+    font-weight: bold;
+  }
+</style>
 
-<Audio />
-<Video />
-<Fetcher />
-<Iphone />
-<Flex />
-<Gooey />
-<Cards />
-<Hoverton />
-<Smoke />
+<Header />
+<nav>
+  {#each pages as page, i}
+    <a
+      href={page}
+      on:click|preventDefault={() => {
+        switchPage(i);
+      }}
+      class:active={currentPage === page}>
+      {page}
+    </a>
+  {/each}
+</nav>
+{#if currentPage === 'audio'}
+  <Audio />
+{/if}
+{#if currentPage === 'video'}
+  <Video />
+{/if}
+
+{#if currentPage === 'fetcher'}
+  <Fetcher />
+{/if}
+
+{#if currentPage === 'neumorphism'}
+  <Neumorphism />
+{/if}
+
+{#if currentPage === 'flex'}
+  <Flex />
+{/if}
+
+{#if currentPage === 'gooey'}
+  <section style="background:black;padding:0;">
+    <Gooey />
+  </section>
+{/if}
+
+{#if currentPage === 'cards'}
+  <Cards />
+{/if}
+
+{#if currentPage === 'hoverton'}
+  <Hoverton />
+{/if}
+
+{#if currentPage === 'smoke'}
+  <Smoke />
+{/if}
 
 <Footer />
