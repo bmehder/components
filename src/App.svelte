@@ -1,5 +1,6 @@
 <script>
-  import Header from "./Header.svelte";
+  // import Header from "./Header.svelte";
+  import Logo from "./Logo.svelte";
   import Audio from "./Audio.svelte";
   import Video from "./Video.svelte";
   import Fetcher from "./Fetcher.svelte";
@@ -39,12 +40,12 @@
     width: 150px; /* 0 width - change this with JavaScript */
     position: absolute;
     z-index: 1;
-    top: 120px;
+    top: 0;
     left: 0;
     background: #333;
     background-size: 50px 50px;
     overflow-x: hidden;
-    padding: 60px 0;
+    padding: 0;
     transition: 0.4s;
   }
   nav a {
@@ -65,8 +66,9 @@
   }
 </style>
 
-<Header />
+<!-- <Header /> -->
 <nav>
+  <Logo />
   {#each pages as page, i}
     <a
       href={page}
@@ -115,4 +117,4 @@
   <Smoke />
 {/if}
 
-<Footer />
+<!-- <Footer /> -->

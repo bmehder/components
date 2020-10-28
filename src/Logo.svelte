@@ -4,9 +4,10 @@
 
 <style>
   img {
-    width: 250px;
+    background: white;
+    width: 100px;
     height: auto;
-    padding-left: 3em;
+    margin: 2em 0 1em;
   }
 </style>
 
