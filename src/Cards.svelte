@@ -84,8 +84,8 @@
 </style>
 
 <section
-  in:fly={{ delay: 250, duration: 300, x: 1000, y: 0, opacity: 0.5 }}
-  out:fly={{ delay: 250, duration: 300, x: -1000, y: 0, opacity: 0.5 }}>
+  in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}
+  out:fly={{ duration: 600, x: -1000, y: 0, opacity: 0.5 }}>
   <!-- <h3>3D Cards</h3> -->
   <div class="container">
     <div class="card">

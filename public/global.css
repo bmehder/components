@@ -95,6 +95,6 @@ section {
 
 @media (max-width: 800px) {
   section {
-    padding: 20px;
+    padding: 0 20px 20px;
   }
 }

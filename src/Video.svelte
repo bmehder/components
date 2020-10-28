@@ -124,8 +124,8 @@
 </style>
 
 <section
-  in:fly={{ duration: 300, x: 1000, y: 0, opacity: 0.5 }}
-  out:fly={{ duration: 300, x: -1000, y: 0, opacity: 0.5 }}>
+  in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}
+  out:fly={{ duration: 600, x: -1000, y: 0, opacity: 0.5 }}>
   <!-- <h3>Video Player</h3> -->
   <!-- svelte-ignore a11y-media-has-caption -->
   <video src={file} id="video" class="screen shadow" {poster} {loop} />
