@@ -9,9 +9,9 @@
     font-family: "Poppins", sans-serif;
   }
 
-  h3 {
+  /* h3 {
     color: white;
-  }
+  } */
 
   section {
     display: flex;

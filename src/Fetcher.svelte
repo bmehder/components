@@ -19,6 +19,7 @@
 <style>
   section {
     overflow-x: auto;
+    padding: 0 100px 0 250px;
   }
   /* h3 {
     color: white;
