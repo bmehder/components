@@ -123,6 +123,7 @@
 </style>
 
 <section>
+  <h3>Video Player</h3>
   <!-- svelte-ignore a11y-media-has-caption -->
   <video src={file} id="video" class="screen shadow" {poster} {loop} />
 

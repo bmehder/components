@@ -21,6 +21,7 @@ body {
 
 h3 {
   margin: 2em auto;
+  font-size: 1.5em;
   text-align: center;
 }
 
@@ -72,6 +73,7 @@ button:not(:disabled):active {
 button:focus {
   border-color: #666;
 }
+
 section {
   width: 100%;
   min-height: 100vh;
@@ -97,7 +99,7 @@ section {
   box-shadow: 0 50px 80px rgba(0, 0, 0, 0.25);
 }
 
-@media only screen and (max-width: 600px) {
+@media (max-width: 800px) {
   section {
     padding: 20px;
   }

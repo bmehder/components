@@ -18,7 +18,7 @@
 </style>
 
 <section>
-  <h3>Flex Boxes (3-Column)</h3>
+  <h3>Flex Boxes</h3>
   <div>
     <article class="shadow">
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo

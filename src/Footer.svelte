@@ -1,6 +1,7 @@
 <script>
   let year = new Date().getFullYear();
-  export let legal = "Copyright © " + year + ". All Rights reserved.";
+  export let legal =
+    "Copyright © " + year + " Tom Foolery. All Rights reserved.";
   export let attribution = "Tom Foolery";
   export let attrLink = "https://mehder.com/";
 </script>
@@ -11,8 +12,8 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
-    background-color: #111;
-    color: #f1f1f1;
+    background-color: #333;
+    color: white;
   }
   p {
     margin: 2em;
