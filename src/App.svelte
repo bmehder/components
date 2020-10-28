@@ -9,7 +9,7 @@
   import Gooey from "./Gooey.svelte";
   import Hoverton from "./Hoverton.svelte";
   import Cards from "./Cards.svelte";
-  import Gallery from "./Gallery.svelte";
+  import Gallery from "./gallery/Gallery.svelte";
   import Smoke from "./Smoke.svelte";
   // import Footer from "./Footer.svelte";
 
@@ -61,7 +61,7 @@
     color: darkorange;
     font-weight: bold;
   }
-  @media (max-width: 400px) {
+  @media (max-width: 600px) {
     nav {
       width: 0px;
     }

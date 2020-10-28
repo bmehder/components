@@ -1,8 +1,8 @@
 <script>
-  import { images } from "./gallery-components/imageData.js";
-  import Slide from "./gallery-components/Slide.svelte";
-  import Caption from "./gallery-components/Caption.svelte";
-  import Thumbnail from "./gallery-components/Thumbnail.svelte";
+  import { images } from "./imageData.js";
+  import Slide from "./Slide.svelte";
+  import Caption from "./Caption.svelte";
+  import Thumbnail from "./Thumbnail.svelte";
 
   /* IMAGE TO SHOW */
   let imageShowingIndex = 0;
