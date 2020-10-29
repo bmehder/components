@@ -48,7 +48,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-60deg);
-    transition: all 0.3s;
+    transition: all 0.6s;
   }
 
   .button:hover span::before,
@@ -56,6 +56,7 @@
     transform: translate(-50%, -50%) rotate(-90deg);
     width: 100%;
     background: darkorange;
+    transition: all 0.6s;
   }
 </style>
 

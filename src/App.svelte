@@ -4,6 +4,7 @@
   import Audio from "./Audio.svelte";
   import Video from "./Video.svelte";
   import Fetcher from "./Fetcher.svelte";
+  import Hero from "./Hero.svelte";
   import Flex from "./Flex.svelte";
   import Neumorphism from "./Neumorphism.svelte";
   import Gooey from "./Gooey.svelte";
@@ -19,11 +20,12 @@
     "audio",
     "video",
     "fetcher",
+    "hero",
     "neumorphism",
     "flex",
     "gooey",
     "isometric",
-    "cards",
+    "hover cards",
     "hoverton",
     "gallery",
     "smoke"
@@ -53,7 +55,7 @@
     transition: 0.4s;
   }
   nav a {
-    padding: 1em 0;
+    padding: 0.8em 0;
     color: white;
     text-decoration: none;
     text-transform: capitalize;
@@ -95,6 +97,10 @@
   <Fetcher />
 {/if}
 
+{#if currentPage === 'hero'}
+  <Hero />
+{/if}
+
 {#if currentPage === 'neumorphism'}
   <Neumorphism />
 {/if}
@@ -113,7 +119,7 @@
   <Isometric />
 {/if}
 
-{#if currentPage === 'cards'}
+{#if currentPage === 'hover cards'}
   <Cards />
 {/if}
 
