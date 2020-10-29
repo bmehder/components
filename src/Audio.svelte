@@ -43,10 +43,7 @@
   }
 </style>
 
-<section
-  id="audio"
-  in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}
-  out:fly={{ duration: 600, x: -1000, y: 0, opacity: 0.5 }}>
+<section id="audio" in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
   <!-- <h3>Audio Player</h3> -->
   <article>
     <figure>

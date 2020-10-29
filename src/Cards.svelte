@@ -18,7 +18,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    /* height: 100vh; */
     background: darkorange;
   }
 
@@ -83,9 +83,7 @@
   }
 </style>
 
-<section
-  in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}
-  out:fly={{ duration: 600, x: -1000, y: 0, opacity: 0.5 }}>
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
   <!-- <h3>3D Cards</h3> -->
   <div class="container">
     <div class="card">

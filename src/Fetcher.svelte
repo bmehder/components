@@ -19,7 +19,7 @@
 <style>
   section {
     overflow-x: auto;
-    padding: 0 100px 0 250px;
+    padding-top: 0;
   }
   /* h3 {
     color: white;
@@ -63,8 +63,7 @@
 <section
   id="fetcher"
   class="carbon"
-  in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}
-  out:fly={{ duration: 600, x: -1000, y: 0, opacity: 0.5 }}>
+  in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
 
   {#await promise}
 

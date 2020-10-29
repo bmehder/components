@@ -1,5 +1,6 @@
 <script>
   import { onMount } from "svelte";
+  import { fly } from "svelte/transition";
 
   onMount(() => {
     const text = document.getElementById("text");
@@ -27,7 +28,7 @@
     min-height: 100vh;
     background: #f1f1f1;
     overflow: hidden;
-    padding-left: 250px;
+    /* padding-left: 250px; */
   }
 
   #text {
@@ -55,6 +56,6 @@
   }
 </style>
 
-<section>
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
   <div id="text" data-text="Text">Text</div>
 </section>

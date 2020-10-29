@@ -38,16 +38,20 @@
 </script>
 
 <style>
+  main {
+    display: flex;
+    align-items: flex-start;
+  }
   nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
-    width: 150px; /* 0 width - change this with JavaScript */
-    position: absolute;
-    z-index: 1;
+    height: 100vh;
+    width: 200px; /* 0 width - change this with JavaScript */
+    /* position: absolute; */
+    /* z-index: 1;
     top: 0;
-    left: 0;
+    left: 0; */
     background: #333;
     background-size: 50px 50px;
     overflow-x: hidden;
@@ -73,67 +77,66 @@
 </style>
 
 <!-- <Header /> -->
-<nav>
-  <Logo />
-  {#each pages as page, i}
-    <a
-      href={page}
-      on:click|preventDefault={() => {
-        switchPage(i);
-      }}
-      class:active={currentPage === page}>
-      {page}
-    </a>
-  {/each}
-</nav>
-{#if currentPage === 'audio'}
-  <Audio />
-{/if}
-{#if currentPage === 'video'}
-  <Video />
-{/if}
+<main>
+  <nav>
+    <Logo />
+    {#each pages as page, i}
+      <a
+        href={page}
+        on:click|preventDefault={() => {
+          switchPage(i);
+        }}
+        class:active={currentPage === page}>
+        {page}
+      </a>
+    {/each}
+  </nav>
+  {#if currentPage === 'audio'}
+    <Audio />
+  {/if}
+  {#if currentPage === 'video'}
+    <Video />
+  {/if}
 
-{#if currentPage === 'fetcher'}
-  <Fetcher />
-{/if}
+  {#if currentPage === 'fetcher'}
+    <Fetcher />
+  {/if}
 
-{#if currentPage === 'hero'}
-  <Hero />
-{/if}
+  {#if currentPage === 'hero'}
+    <Hero />
+  {/if}
 
-{#if currentPage === 'neumorphism'}
-  <Neumorphism />
-{/if}
+  {#if currentPage === 'neumorphism'}
+    <Neumorphism />
+  {/if}
 
-{#if currentPage === 'flex'}
-  <Flex />
-{/if}
+  {#if currentPage === 'flex'}
+    <Flex />
+  {/if}
 
-{#if currentPage === 'gooey'}
-  <section style="background:black;padding:0;">
-    <Gooey />
-  </section>
-{/if}
+  {#if currentPage === 'gooey'}
+    <section style="background:black;padding:0;">
+      <Gooey />
+    </section>
+  {/if}
 
-{#if currentPage === 'isometric'}
-  <Isometric />
-{/if}
+  {#if currentPage === 'isometric'}
+    <Isometric />
+  {/if}
 
-{#if currentPage === 'hover cards'}
-  <Cards />
-{/if}
+  {#if currentPage === 'hover cards'}
+    <Cards />
+  {/if}
 
-{#if currentPage === 'hoverton'}
-  <Hoverton />
-{/if}
+  {#if currentPage === 'hoverton'}
+    <Hoverton />
+  {/if}
 
-{#if currentPage === 'gallery'}
-  ncjsanckj
-  <Gallery />
-{/if}
+  {#if currentPage === 'gallery'}
+    <Gallery />
+  {/if}
 
-{#if currentPage === 'smoke'}
-  <Smoke />
-{/if}
-
-<!-- <Footer /> -->
+  {#if currentPage === 'smoke'}
+    <Smoke />
+  {/if}
+</main>
