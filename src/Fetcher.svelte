@@ -3,10 +3,11 @@
   import Gooey from "./Gooey.svelte";
   export let endpoint =
     "https://raw.githubusercontent.com/bmehder/projects/master/json/covid.json";
+
   async function getData() {
     const res = await fetch(endpoint);
     const data = await res.json();
-    console.log(data);
+    // console.log(data);
     if (res.ok) {
       return data;
     } else {

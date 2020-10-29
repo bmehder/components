@@ -48,10 +48,6 @@
     align-items: center;
     height: 100vh;
     width: 200px; /* 0 width - change this with JavaScript */
-    /* position: absolute; */
-    /* z-index: 1;
-    top: 0;
-    left: 0; */
     background: #333;
     background-size: 50px 50px;
     overflow-x: hidden;
@@ -94,6 +90,7 @@
   {#if currentPage === 'audio'}
     <Audio />
   {/if}
+
   {#if currentPage === 'video'}
     <Video />
   {/if}

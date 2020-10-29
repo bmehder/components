@@ -4,7 +4,7 @@
 
 <style>
   img {
-    background: darkorange;
+    background: white;
     width: 100px;
     height: auto;
     margin: 2em 0 1em;
