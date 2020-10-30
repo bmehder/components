@@ -66,13 +66,15 @@
     perspective: 450px;
   }
   .scroll-text {
+    margin: 0;
+    padding: 0;
     color: #ffc909;
-    font-size: 2vw;
+    /* font-size: 2vw; */
     line-height: 1.5em;
     font-weight: bold;
     text-align: justify;
     position: relative;
-    animation: scroll 100s linear infinite;
+    animation: scroll 200s linear infinite;
   }
   h1,
   h2 {
@@ -80,7 +82,7 @@
     text-align: center;
   }
   p {
-    margin: 1em;
+    margin: 1em 0;
   }
 
   @keyframes scroll {
