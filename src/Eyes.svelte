@@ -14,6 +14,20 @@
   }
 </script>
 
+<section>
+  <h3>
+    Eyes
+    <br />
+    <small>(Under Construction)</small>
+  </h3>
+  <div class="face">
+    <div class="eyes">
+      <div class="eye" />
+      <div class="eye" />
+    </div>
+  </div>
+</section>
+
 <style>
   h3 {
     color: white;
@@ -88,17 +102,3 @@
     border-radius: 50%;
   }
 </style>
-
-<section>
-  <h3>
-    Eyes
-    <br />
-    <small>(Under Construction)</small>
-  </h3>
-  <div class="face">
-    <div class="eyes">
-      <div class="eye" />
-      <div class="eye" />
-    </div>
-  </div>
-</section>

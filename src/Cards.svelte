@@ -2,6 +2,51 @@
   import { fly } from "svelte/transition";
 </script>
 
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  <!-- <h3>3D Cards</h3> -->
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <img src="/assets/card-1.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h2>Card One</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          eveniet est esse ut dolor nostrum quam quod, quasi, quis accusantium
+          veniam aperiam?
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="/assets/card-2.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h2>Card Two</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          eveniet est esse ut dolor nostrum quam quod, quasi, quis accusantium
+          veniam aperiam?
+        </p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="imgBx">
+        <img src="/assets/card-3.jpg" alt="" />
+      </div>
+      <div class="content">
+        <h2>Card Three</h2>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          eveniet est esse ut dolor nostrum quam quod, quasi, quis accusantium
+          veniam aperiam?
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
@@ -82,48 +127,3 @@
     transition-delay: 0.3s;
   }
 </style>
-
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>3D Cards</h3> -->
-  <div class="container">
-    <div class="card">
-      <div class="imgBx">
-        <img src="/assets/card-1.jpg" alt="" />
-      </div>
-      <div class="content">
-        <h2>Card One</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          eveniet est esse ut dolor nostrum quam quod, quasi, quis accusantium
-          veniam aperiam?
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="imgBx">
-        <img src="/assets/card-2.jpg" alt="" />
-      </div>
-      <div class="content">
-        <h2>Card Two</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          eveniet est esse ut dolor nostrum quam quod, quasi, quis accusantium
-          veniam aperiam?
-        </p>
-      </div>
-    </div>
-    <div class="card">
-      <div class="imgBx">
-        <img src="/assets/card-3.jpg" alt="" />
-      </div>
-      <div class="content">
-        <h2>Card Three</h2>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          eveniet est esse ut dolor nostrum quam quod, quasi, quis accusantium
-          veniam aperiam?
-        </p>
-      </div>
-    </div>
-  </div>
-</section>

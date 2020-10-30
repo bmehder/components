@@ -12,6 +12,10 @@
   });
 </script>
 
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  <div id="text" data-text="Text">Text</div>
+</section>
+
 <style>
   @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
 
@@ -55,7 +59,3 @@
     z-index: -1;
   }
 </style>
-
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <div id="text" data-text="Text">Text</div>
-</section>

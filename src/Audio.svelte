@@ -5,6 +5,18 @@
     "https://file-examples-com.github.io/uploads/2017/11/file_example_MP3_700KB.mp3";
 </script>
 
+<section id="audio" in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  <!-- <h3>Audio Player</h3> -->
+  <article>
+    <figure>
+      <img src="assets/{image}" alt="Background" />
+    </figure>
+    <audio controls loop>
+      <source src={source} type="audio/mp3" />
+    </audio>
+  </article>
+</section>
+
 <style>
   section {
     background: linear-gradient(45deg, darkorange, #fffde7);
@@ -42,15 +54,3 @@
     display: block;
   }
 </style>
-
-<section id="audio" in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>Audio Player</h3> -->
-  <article>
-    <figure>
-      <img src="assets/{image}" alt="Background" />
-    </figure>
-    <audio controls loop>
-      <source src={source} type="audio/mp3" />
-    </audio>
-  </article>
-</section>

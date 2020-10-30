@@ -2,6 +2,14 @@
   import { fly } from "svelte/transition";
 </script>
 
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  <!-- <h3>Hoverton</h3> -->
+  <button class="button" on:click|preventDefault>
+    Continue
+    <span />
+  </button>
+</section>
+
 <style>
   section {
     display: flex;
@@ -59,11 +67,3 @@
     transition: all 0.6s;
   }
 </style>
-
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>Hoverton</h3> -->
-  <button class="button" on:click|preventDefault>
-    Continue
-    <span />
-  </button>
-</section>

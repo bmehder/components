@@ -2,6 +2,11 @@
   import { fly } from "svelte/transition";
 </script>
 
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  <!-- <h3>Neumorphism</h3> -->
+  <div class="iPhone" />
+</section>
+
 <style>
   section {
     display: flex;
@@ -56,8 +61,3 @@
     transform: skewX(-47deg);
   }
 </style>
-
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>Neumorphism</h3> -->
-  <div class="iPhone" />
-</section>

@@ -4,6 +4,13 @@
   export let caption = "Just another hero image caption...";
 </script>
 
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  <img src={media} alt="hero" />
+  <div>
+    <h3>{caption}</h3>
+  </div>
+</section>
+
 <style>
   @import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@700&display=swap");
   section {
@@ -32,10 +39,3 @@
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
   }
 </style>
-
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <img src={media} alt="hero" />
-  <div>
-    <h3>{caption}</h3>
-  </div>
-</section>

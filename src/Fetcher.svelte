@@ -17,50 +17,6 @@
   let promise = getData();
 </script>
 
-<style>
-  section {
-    overflow-x: auto;
-    padding-top: 0;
-  }
-  /* h3 {
-    color: white;
-  } */
-  article {
-    display: flex;
-    min-width: 600px;
-  }
-  article:nth-child(odd) {
-    background-color: #fff;
-  }
-  article:nth-child(even) {
-    background-color: #f1f1f1;
-  }
-  article div {
-    width: 25%;
-    line-height: 2em;
-    padding: 1em 3em;
-  }
-  .heading {
-    background-color: darkorange !important;
-    color: #fff;
-    margin-top: 50px;
-  }
-  p {
-    display: flex;
-    justify-content: center;
-    margin: 1em 0;
-    text-align: center;
-  }
-  a {
-    color: darkorange;
-    text-decoration: none;
-  }
-  a:hover {
-    color: darkorange;
-    border-bottom: 1px solid darkorange;
-  }
-</style>
-
 <section
   id="fetcher"
   class="carbon"
@@ -113,3 +69,47 @@
   {/await}
 
 </section>
+
+<style>
+  section {
+    overflow-x: auto;
+    padding-top: 0;
+  }
+  /* h3 {
+    color: white;
+  } */
+  article {
+    display: flex;
+    min-width: 600px;
+  }
+  article:nth-child(odd) {
+    background-color: #fff;
+  }
+  article:nth-child(even) {
+    background-color: #f1f1f1;
+  }
+  article div {
+    width: 25%;
+    line-height: 2em;
+    padding: 1em 3em;
+  }
+  .heading {
+    background-color: darkorange !important;
+    color: #fff;
+    margin-top: 50px;
+  }
+  p {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0;
+    text-align: center;
+  }
+  a {
+    color: darkorange;
+    text-decoration: none;
+  }
+  a:hover {
+    color: darkorange;
+    border-bottom: 1px solid darkorange;
+  }
+</style>

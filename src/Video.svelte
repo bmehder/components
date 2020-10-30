@@ -62,6 +62,30 @@
   });
 </script>
 
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  <!-- <h3>Video Player</h3> -->
+  <!-- svelte-ignore a11y-media-has-caption -->
+  <video src={file} id="video" class="screen shadow" {poster} {loop} />
+
+  <div class="controls">
+    <button class="btn" id="play">
+      <i class="fa fa-play fa-2x" />
+    </button>
+    <button class="btn" id="stop">
+      <i class="fa fa-stop fa-2x" />
+    </button>
+    <input
+      type="range"
+      id="progress"
+      class="progress"
+      min="0"
+      max="100"
+      step="0.1"
+      value="0" />
+    <span class="timestamp" id="timestamp">00:00</span>
+  </div>
+</section>
+
 <style>
   section {
     display: flex;
@@ -122,27 +146,3 @@
     }
   }
 </style>
-
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>Video Player</h3> -->
-  <!-- svelte-ignore a11y-media-has-caption -->
-  <video src={file} id="video" class="screen shadow" {poster} {loop} />
-
-  <div class="controls">
-    <button class="btn" id="play">
-      <i class="fa fa-play fa-2x" />
-    </button>
-    <button class="btn" id="stop">
-      <i class="fa fa-stop fa-2x" />
-    </button>
-    <input
-      type="range"
-      id="progress"
-      class="progress"
-      min="0"
-      max="100"
-      step="0.1"
-      value="0" />
-    <span class="timestamp" id="timestamp">00:00</span>
-  </div>
-</section>

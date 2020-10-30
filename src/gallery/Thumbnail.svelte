@@ -5,6 +5,16 @@
   export let selected;
 </script>
 
+<div class="thumbnail-cont">
+  <img
+    class="sample cursor"
+    class:active={selected}
+    {id}
+    src={thumbImg}
+    alt={altTag}
+    on:click />
+</div>
+
 <style>
   /* Six columns side by side */
   .thumbnail-cont {
@@ -42,13 +52,3 @@
     height: 85%;
   }
 </style>
-
-<div class="thumbnail-cont">
-  <img
-    class="sample cursor"
-    class:active={selected}
-    {id}
-    src={thumbImg}
-    alt={altTag}
-    on:click />
-</div>

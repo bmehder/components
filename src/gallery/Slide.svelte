@@ -6,6 +6,12 @@
   export let attr;
 </script>
 
+<!-- Full-width images with number text -->
+<div class="mySlides">
+  <div class="numbertext">{slideNo} / {totalSlides}</div>
+  <img src={image} alt={altTag} title={attr} />
+</div>
+
 <style>
   /* Number text (1/3 etc) */
   .numbertext {
@@ -21,9 +27,3 @@
     width: 100%;
   }
 </style>
-
-<!-- Full-width images with number text -->
-<div class="mySlides">
-  <div class="numbertext">{slideNo} / {totalSlides}</div>
-  <img src={image} alt={altTag} title={attr} />
-</div>

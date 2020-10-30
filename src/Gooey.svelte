@@ -2,10 +2,29 @@
   import { fly } from "svelte/transition";
 </script>
 
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  <!-- <h3>Gooey SVG Spinner</h3> -->
+  <svg>
+    <filter id="gooey">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+      <feColorMatrix values=" 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10" />
+    </filter>
+  </svg>
+  <div class="loader">
+    <span style="--i:1;" />
+    <span style="--i:2;" />
+    <span style="--i:3;" />
+    <span style="--i:4;" />
+    <span style="--i:5;" />
+    <span style="--i:6;" />
+    <span style="--i:7;" />
+  </div>
+</section>
+
 <style>
-  h3 {
+  /* h3 {
     color: darkorange;
-  }
+  } */
   section {
     display: flex;
     flex-direction: column;
@@ -53,22 +72,3 @@
     height: 0;
   }
 </style>
-
-<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <!-- <h3>Gooey SVG Spinner</h3> -->
-  <svg>
-    <filter id="gooey">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
-      <feColorMatrix values=" 1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 20 -10" />
-    </filter>
-  </svg>
-  <div class="loader">
-    <span style="--i:1;" />
-    <span style="--i:2;" />
-    <span style="--i:3;" />
-    <span style="--i:4;" />
-    <span style="--i:5;" />
-    <span style="--i:6;" />
-    <span style="--i:7;" />
-  </div>
-</section>

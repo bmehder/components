@@ -28,40 +28,6 @@
   const goToSlide = number => (imageShowingIndex = number);
 </script>
 
-<style>
-  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
-
-  * {
-    box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
-  }
-
-  main {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    background-color: #222;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
-  }
-  section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  /* Position the image container (needed to position the left and right arrows) */
-  .container {
-    position: relative;
-  }
-
-  .thumbnails-row {
-    width: 100%;
-    display: flex;
-    align-self: flex-end;
-  }
-</style>
-
 <section>
   <main>
 
@@ -95,3 +61,37 @@
 
   </main>
 </section>
+
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
+
+  * {
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+  }
+
+  main {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    background-color: #222;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+  }
+  section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+
+  .thumbnails-row {
+    width: 100%;
+    display: flex;
+    align-self: flex-end;
+  }
+</style>

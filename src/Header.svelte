@@ -2,6 +2,10 @@
   import Logo from "./Logo.svelte";
 </script>
 
+<header>
+  <Logo />
+</header>
+
 <style>
   header {
     display: flex;
@@ -27,7 +31,3 @@
     background-size: 50px 50px;
   }
 </style>
-
-<header>
-  <Logo />
-</header>

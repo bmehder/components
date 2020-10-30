@@ -1,3 +1,11 @@
+<nav>
+  <ul>
+    <li>
+      <a href="#home">Home</a>
+    </li>
+  </ul>
+</nav>
+
 <style>
   nav {
     width: 60%;
@@ -29,11 +37,3 @@
     padding-bottom: 0.25em;
   }
 </style>
-
-<nav>
-  <ul>
-    <li>
-      <a href="#home">Home</a>
-    </li>
-  </ul>
-</nav>

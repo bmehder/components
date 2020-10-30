@@ -2,6 +2,10 @@
   export let image = "https://logoipsum.com/logo/logo-10.svg";
 </script>
 
+<a href=".">
+  <img src={image} alt="Logo" />
+</a>
+
 <style>
   img {
     background: white;
@@ -11,7 +15,3 @@
     border-radius: 2px;
   }
 </style>
-
-<a href=".">
-  <img src={image} alt="Logo" />
-</a>

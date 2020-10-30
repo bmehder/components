@@ -37,41 +37,6 @@
   };
 </script>
 
-<style>
-  main {
-    display: flex;
-    align-items: flex-start;
-  }
-  nav {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    width: 200px; /* 0 width - change this with JavaScript */
-    background: #333;
-    background-size: 50px 50px;
-    overflow-x: hidden;
-    padding: 0;
-    transition: 0.4s;
-  }
-  nav a {
-    padding: 0.8em 0;
-    color: white;
-    text-decoration: none;
-    text-transform: capitalize;
-  }
-  a:hover,
-  .active {
-    color: darkorange;
-    font-weight: bold;
-  }
-  @media (max-width: 600px) {
-    nav {
-      width: 0px;
-    }
-  }
-</style>
-
 <!-- <Header /> -->
 <main>
   <nav>
@@ -137,3 +102,38 @@
     <Smoke />
   {/if}
 </main>
+
+<style>
+  main {
+    display: flex;
+    align-items: flex-start;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 200px; /* 0 width - change this with JavaScript */
+    background: #333;
+    background-size: 50px 50px;
+    overflow-x: hidden;
+    padding: 0;
+    transition: 0.4s;
+  }
+  nav a {
+    padding: 0.8em 0;
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+  }
+  a:hover,
+  .active {
+    color: darkorange;
+    font-weight: bold;
+  }
+  @media (max-width: 600px) {
+    nav {
+      width: 0px;
+    }
+  }
+</style>

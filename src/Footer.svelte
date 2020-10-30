@@ -6,6 +6,14 @@
   export let attrLink = "https://mehder.com/";
 </script>
 
+<footer>
+  <p>{legal}</p>
+  <p>
+    Developed by
+    <a href={attrLink} target="_blank">{attribution}</a>
+  </p>
+</footer>
+
 <style>
   footer {
     display: flex;
@@ -28,11 +36,3 @@
     text-decoration: underline;
   }
 </style>
-
-<footer>
-  <p>{legal}</p>
-  <p>
-    Developed by
-    <a href={attrLink} target="_blank">{attribution}</a>
-  </p>
-</footer>
