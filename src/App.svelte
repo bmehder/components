@@ -10,6 +10,7 @@
   import Gooey from "./Gooey.svelte";
   import Hoverton from "./Hoverton.svelte";
   import Isometric from "./Isometric.svelte";
+  import StarWars from "./StarWars.svelte";
   import Cards from "./Cards.svelte";
   import Gallery from "./gallery/Gallery.svelte";
   import Smoke from "./Smoke.svelte";
@@ -25,6 +26,7 @@
     "flex",
     "gooey",
     "isometric",
+    "star wars",
     "hover cards",
     "hoverton",
     "gallery",
@@ -84,6 +86,10 @@
 
   {#if currentPage === 'isometric'}
     <Isometric />
+  {/if}
+
+  {#if currentPage === 'star wars'}
+    <StarWars />
   {/if}
 
   {#if currentPage === 'hover cards'}

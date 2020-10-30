@@ -11,6 +11,7 @@
     <figure>
       <img src="assets/{image}" alt="Background" />
     </figure>
+    <!-- svelte-ignore a11y-media-has-caption -->
     <audio controls loop>
       <source src={source} type="audio/mp3" />
     </audio>
