@@ -31,6 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
     text-align: center;
     /* background-color: #333; */
     font-size: 1.2rem;
