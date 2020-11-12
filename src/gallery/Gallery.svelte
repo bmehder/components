@@ -1,4 +1,5 @@
 <script>
+  import { fade, fly } from "svelte/transition";
   import { images } from "./imageData.js";
   import Slide from "./Slide.svelte";
   import Caption from "./Caption.svelte";
@@ -28,7 +29,7 @@
   const goToSlide = number => (imageShowingIndex = number);
 </script>
 
-<section>
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
   <main>
 
     <!-- image gallery -->
