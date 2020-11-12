@@ -49,11 +49,11 @@
   onMount(() => typing());
 </script>
 
-<section>
-  <h1 in:fly={{ y: -200, duration: 1000 }} out:fade>{typedChars}</h1>
+<section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  <h1 in:fly={{ y: -200, duration: 1000 }}>{typedChars}</h1>
 
   {#if finished}
-    <button in:fly={{ y: -200, duration: 1000 }} out:fade on:click={replay}>
+    <button in:fly={{ y: -200, duration: 1000 }} on:click={replay}>
       &#8634;
     </button>
   {/if}
