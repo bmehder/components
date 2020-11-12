@@ -64,13 +64,6 @@
 </section>
 
 <style>
-  @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap");
-
-  * {
-    box-sizing: border-box;
-    font-family: "Josefin Sans", sans-serif;
-  }
-
   main {
     width: 50vw;
     display: flex;
@@ -78,14 +71,38 @@
     align-items: center;
     margin: 0;
     background-color: #222;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+    font-family: "Josefin Sans", sans-serif;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 1);
   }
   section {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #001;
+    background-image: radial-gradient(
+        rgba(255, 255, 255, 0.5) 15%,
+        transparent 16%
+      ),
+      radial-gradient(rgba(255, 255, 255, 0.5) 15%, transparent 16%);
+    background-size: 60px 60px;
+    background-position: 0 0, 30px 30px;
   }
-  /* Position the image container (needed to position the left and right arrows) */
+  section * {
+    z-index: 2;
+  }
+  section::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* z-index: -1; */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), dodgerblue);
+    opacity: 0.25;
+  }
+
   .container {
     position: relative;
   }
