@@ -2,8 +2,8 @@
   import { onMount } from "svelte";
   import { fade, fly } from "svelte/transition";
 
-  export let phrase =
-    "const typing = () => typewriter = setInterval(typeChar, speed);";
+  // Props
+  export let phrase = "Hello World!";
   export let speed = 100;
   export let audioNo = 3;
 
@@ -11,6 +11,19 @@
   let index = 0;
   let typewriter;
   let finished;
+
+  const typingSFX = [
+    "https://assets.codepen.io/504854/type_1.mp3",
+    "https://assets.codepen.io/504854/type_2.mp3",
+    "https://assets.codepen.io/504854/type_3.mp3"
+  ];
+
+  const playSFX = () => {
+    let url = typingSFX[audioNo - 1];
+    let keySFX = new Audio(url);
+
+    keySFX.play();
+  };
 
   const typeChar = () => {
     if (index < phrase.length) {
@@ -32,27 +45,14 @@
     typing();
   };
 
-  const typingSFX = [
-    "https://assets.codepen.io/504854/type_1.mp3",
-    "https://assets.codepen.io/504854/type_2.mp3",
-    "https://assets.codepen.io/504854/type_3.mp3"
-  ];
-
-  const playSFX = () => {
-    let url = typingSFX[audioNo - 1];
-    let keySFX = new Audio(url);
-
-    keySFX.play();
-  };
-
   onMount(() => typing());
 </script>
 
 <section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
-  <h1 in:fly={{ y: -200, duration: 1000 }}>{typedChars}</h1>
+  <h1>{typedChars}</h1>
 
   {#if finished}
-    <button in:fly={{ y: -200, duration: 1000 }} on:click={replay}>
+    <button in:fly={{ y: -200, duration: 600 }} on:click={replay}>
       &#8634;
     </button>
   {/if}
@@ -92,7 +92,7 @@
   button {
     position: absolute;
     top: 5em;
-    right: 1em;
+    right: 2em;
     width: 60px;
     height: 60px;
     font-weight: bold;
@@ -103,5 +103,11 @@
     border: none;
     box-shadow: 16px 32px 64px rgba(0, 0, 0, 1),
       -16px -32px 64px rgba(255, 255, 255, 0.6);
+    transition: 500ms;
+  }
+  button:hover {
+    box-shadow: 16px 32px 64px rgba(0, 0, 0, 0.8),
+      -16px -32px 64px rgba(255, 255, 255, 0.6);
+    transform: scale(0.95);
   }
 </style>

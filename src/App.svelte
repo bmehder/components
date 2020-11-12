@@ -1,4 +1,6 @@
 <script>
+  import { fly } from "svelte/transition";
+  import { quintOut } from "svelte/easing";
   // import Header from "./Header.svelte";
   import Logo from "./Logo.svelte";
   import Audio from "./Audio.svelte";
@@ -39,23 +41,31 @@
     currentPage = pages[i];
     console.log(currentPage);
   };
+
+  let navOpen = true;
+  const toggleNav = () => {
+    navOpen = !navOpen;
+  };
 </script>
 
 <!-- <Header /> -->
 <main>
-  <nav>
-    <Logo />
-    {#each pages as page, i}
-      <a
-        href={page}
-        on:click|preventDefault={() => {
-          switchPage(i);
-        }}
-        class:active={currentPage === page}>
-        {page}
-      </a>
-    {/each}
-  </nav>
+  {#if navOpen}
+    <nav
+      transition:fly={{ delay: 0, duration: 300, x: -200, y: 0, opacity: 1, easing: quintOut }}>
+      <Logo on:click={toggleNav} />
+      {#each pages as page, i}
+        <a
+          href={page}
+          on:click|preventDefault={() => {
+            switchPage(i);
+          }}
+          class:active={currentPage === page}>
+          {page}
+        </a>
+      {/each}
+    </nav>
+  {/if}
   {#if currentPage === 'audio'}
     <Audio />
   {/if}
@@ -121,7 +131,7 @@
 <style>
   main {
     display: flex;
-    align-items: flex-start;
+    /* align-items: flex-start; */
   }
   nav {
     display: flex;

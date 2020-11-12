@@ -2,7 +2,7 @@
   export let image = "https://logoipsum.com/logo/logo-10.svg";
 </script>
 
-<a href=".">
+<a on:click|preventDefault href=".">
   <img src={image} alt="Logo" />
 </a>
 
