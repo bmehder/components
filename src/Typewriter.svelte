@@ -1,7 +1,6 @@
 <script>
   import { onMount } from "svelte";
   import { fade, fly } from "svelte/transition";
-  import { elasticOut } from "svelte/easing";
 
   export let phrase =
     "const typing = () => typewriter = setInterval(typeChar, speed);";
