@@ -14,6 +14,7 @@
   import Cards from "./Cards.svelte";
   import Gallery from "./gallery/Gallery.svelte";
   import Smoke from "./Smoke.svelte";
+  import Typewriter from "./Typewriter.svelte";
   // import Footer from "./Footer.svelte";
 
   // Router
@@ -30,7 +31,8 @@
     "hover cards",
     "hoverton",
     "gallery",
-    "smoke"
+    "smoke",
+    "typewriter"
   ];
   let currentPage = pages[0];
   const switchPage = i => {
@@ -106,6 +108,13 @@
 
   {#if currentPage === 'smoke'}
     <Smoke />
+  {/if}
+
+  {#if currentPage === 'typewriter'}
+    <Typewriter
+      speed="100"
+      phrase="So Long, and Thanks for All the Fish."
+      audioNo="1" />
   {/if}
 </main>
 
