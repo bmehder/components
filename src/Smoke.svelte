@@ -1,6 +1,6 @@
 <script>
   import { fly } from "svelte/transition";
-  export let text = "SMOKE";
+  export let text = "HELLO";
 </script>
 
 <section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
