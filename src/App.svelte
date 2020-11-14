@@ -1,5 +1,5 @@
 <script>
-  import { fly } from "svelte/transition";
+  import { fly, fade } from "svelte/transition";
   import { quintOut } from "svelte/easing";
   // import Header from "./Header.svelte";
   import Logo from "./Logo.svelte";
@@ -52,6 +52,9 @@
 
 <!-- <Header /> -->
 <main>
+  {#if !navOpen}
+    <button in:fade on:click={toggleNav}>Open Menu</button>
+  {/if}
   {#if navOpen}
     <nav
       transition:fly={{ delay: 0, duration: 300, x: -200, y: 0, opacity: 1, easing: quintOut }}>
@@ -155,6 +158,28 @@
     color: white;
     text-decoration: none;
     text-transform: capitalize;
+  }
+  button {
+    position: fixed;
+    background: darkorange;
+    top: 2em;
+    left: 0;
+    z-index: 3;
+    line-height: 50px;
+    text-align: center;
+    margin-left: -5px;
+    padding: 5px 15px 5px 20px;
+    font-weight: bold;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    opacity: 0.1;
+  }
+  button:hover {
+    opacity: 1;
+    box-shadow: 16px 32px 64px rgba(0, 0, 0, 0.8),
+      -16px -32px 64px rgba(255, 255, 255, 0.6);
+    transform: scale(0.95);
+    border: none;
   }
   a:hover,
   .active {
