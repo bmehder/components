@@ -38,7 +38,7 @@
     "typewriter",
     "glowing"
   ];
-  let currentPage = pages[0];
+  let currentPage = pages[13];
   const switchPage = i => {
     currentPage = pages[i];
     console.log(currentPage);

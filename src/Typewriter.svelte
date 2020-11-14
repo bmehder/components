@@ -49,8 +49,14 @@
 </script>
 
 <section in:fly={{ duration: 600, x: 1000, y: 0, opacity: 0.5 }}>
+  {#if !finished}
+    <img
+      in:fly={{ duration: 600, x: 0, y: 1000, opacity: 0.5 }}
+      out:fly={{ duration: 2000, x: 0, y: -500, opacity: 0.5 }}
+      src="./assets/dolphin.png"
+      alt="" />
+  {/if}
   <h1>{typedChars}</h1>
-
   {#if finished}
     <button in:fly={{ y: -200, duration: 600 }} on:click={replay}>
       &#8634;
@@ -109,5 +115,9 @@
     box-shadow: 16px 32px 64px rgba(0, 0, 0, 0.8),
       -16px -32px 64px rgba(255, 255, 255, 0.6);
     transform: scale(0.95);
+  }
+  img {
+    width: 300px;
+    height: auto;
   }
 </style>
